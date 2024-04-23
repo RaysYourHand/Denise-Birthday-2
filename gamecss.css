@@ -1,0 +1,125 @@
+body{
+    background-color: #040D12;
+    overflow: hidden;
+}
+.box1{
+    background-color: #5C8374;
+    height: 42.5vh;
+    width: 42.5vh;
+    position: absolute;
+    top: 5vh;
+    left: 20vh;
+}
+.box2{
+    background-color: #5C8374;
+    height: 42.5vh;
+    width: 42.5vh; 
+    position: absolute;
+    bottom: 5vh;  
+    left: 20vh;
+}
+.box3{
+    background-color: #5C8374;
+    height: 42.5vh;
+    width: 42.5vh; 
+    position: absolute;
+    top: 5vh;  
+    left: 85vh;
+}
+.box4{
+    background-color: #5C8374;
+    height: 42.5vh;
+    width: 42.5vh; 
+    position: absolute;
+    bottom: 5vh;  
+    left: 85vh;
+}
+.box5{
+    background-color: #5C8374;
+    height: 42.5vh;
+    width: 42.5vh; 
+    position: absolute;
+    top: 5vh;  
+    left: 150vh;
+}
+.box6{
+    background-color: #5C8374;
+    height: 42.5vh;
+    width: 42.5vh; 
+    position: absolute;
+    bottom: 5vh; 
+    left: 150vh; 
+}
+.tri{
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent; /*如何做三角形 https://css-tricks.com/snippets/css/css-triangle/ */
+    border-left: 60px solid transparent;   
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid #183D3D;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.Btri{
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;    
+    border-left: 60px solid transparent;   
+    border-right: 60px solid transparent; 
+    border-bottom: 387px solid #183D3D;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.wall{
+    background-color: #183D3D;
+    position: absolute; 
+}
+.quarter{
+    background-color: #183D3D; /*如何做1/4圓 https://www.youtube.com/watch?v=Mt0KT_SaBZU*/
+    position: absolute;
+    height: 100px;width: 80px;
+    border-top-right-radius: 100%;
+}
+.half{
+    background-color: #183D3D;  /*如何做半圓 https://www.youtube.com/watch?v=CjCVpJy3F9k*/
+    position: absolute;
+    height: 150px;width: 75px;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+}
+.circle{
+    background-color: #183D3D;
+    position: absolute;
+    border-radius: 50%;
+    height: 130px;
+    width: 100px;
+}
+
+.heart{
+    background-image: url(heart.png);
+    background-size: 50px;
+    height: 40px;
+    width: 50px;
+    position: absolute;
+}
+.teleport{
+    background-image: url(teleport.png);
+    background-size: 70px;
+    height: 68px;
+    width: 68px;
+    position: absolute;
+}
+.char{
+    z-index: 1;
+    background-image: url(charRight.png);
+    background-size: 55px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 200px;
+    left: 345px;
+}
+.block{
+    z-index: 2;
+}
+

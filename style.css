@@ -1,0 +1,165 @@
+@keyframes titleDown{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes titleDown-5{
+    0%{
+        transform: translateY(-100%);
+        transform: rotate(-5deg);
+        transform: translateY(-100%);
+        
+    }
+    100%{
+        transform: translateY(0);
+        transform: rotate(-5deg);
+    }
+}
+@keyframes titleDown30{
+    0%{
+        transform: translateY(-100%);
+        transform: rotate(30deg);
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+        transform: rotate(30deg);
+    }
+}
+@keyframes titleDown5{
+    0%{
+        transform: translateY(-100%);
+        transform: rotate(5deg);
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+        transform: rotate(5deg);
+    }
+}
+@keyframes titleDown-15{
+    0%{
+        transform: rotate(-15deg);
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+        transform: rotate(-15deg);
+    }
+}
+body{
+    background-image: url("bg.png");
+
+}
+.title{
+
+    background-image: url("woodBoard.png");
+    background-size: 180px;
+    position: absolute;
+    height: 180px;
+    width: 180px;
+}
+#a{
+    top: 50px;
+    left: 130px;
+    animation: titleDown 1s ease-in-out;
+}
+#c{
+    top: 150px;
+    left: 430px;
+    transform: rotate(-5deg);
+    animation: titleDown-5 1.5s ease-in-out;
+    animation-delay: -0.2s;
+}
+#u{
+    top: 200px;
+    left: 570px;
+    animation: titleDown 1.5s ease-in-out;
+    animation-delay: -0.2s;
+}
+#t{
+    top: 140px;
+    left: 750px;
+    animation: titleDown 1.5s ease-in-out;
+    animation-delay: -0.2s;
+}
+#e{
+    top: 100px;
+    left: 930px;
+    transform: rotate(30deg);
+    animation: titleDown30 1.5s ease-in-out;
+    animation-delay: -0.2s;
+}
+#g{
+    top: 180px;
+    left: 1170px;
+    animation: titleDown 1.5s ease-in-out;
+    animation-delay: -0;
+}
+#a1{
+    top: 160px;
+    left: 1320px;
+    transform: rotate(5deg);
+    animation: titleDown5 1.5s ease-in-out;
+    animation-delay: -0;
+}
+#m{
+    top: 280px;
+    left: 1470px;
+    transform: rotate(-15deg);
+    animation: titleDown-15 1.5s ease-in-out;
+    animation-delay: -0;
+}
+#e1{
+    top: 200px;
+    left: 1620px;
+    animation: titleDown 1.5s ease-in-out;
+    animation-delay: -0;
+}
+.letter{
+    background-size: cover;
+    position: relative;
+    height: 65px;
+    width: 50px;
+    top: 35%;
+    left: 35%;
+}
+@keyframes startUp{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.startButton{
+    background-image: url(startBoard.png);
+    position: absolute;
+    top: 60vh;
+    left: 90vh;
+    height: 200px;
+    width: 200px;
+    background-size: 200px;
+    animation: startUp 3s ease-in-out;
+    animation-delay: -0.1s;
+    cursor: pointer;
+}
+.start{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    position:relative;
+    top: 4%;
+    left: 27%;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.452);
+}
+.rope{
+    background-image: url("rope.png");
+    position: fixed;
+    top: -191%;
+    left: 19%;
+    height: 400px;
+    width: 3px;  
+}

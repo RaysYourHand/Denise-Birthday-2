@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hbd ILOVEU</title>
+    <link rel="stylesheet" href="gamecss.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="char"></div>
+    <p class="hp" style="font-size: xx-large;position: absolute;left: 30%;top: 3%;color: #5C8374;z-index: 100;">Health:<span id="healthValue">100</span></p>
+    <div class="box1">
+        <div class="wall block" style="width: 16.25vh;height: 42.5vh;"></div>
+        <div class="wall block" style="width: 42.5vh;height: 3vh;"></div>
+        <div class="wall block" style="width: 42.5vh;height: 3vh;bottom: 0;"></div>
+        <div class="wall block" style="width: 16.25vh;height: 42.5vh;right: 0;"></div>
+        <div class="heart" id="heart1" style="top: 5vh;left: 18.25vh;"></div>
+        <div class="teleport" id="tp1" style="top: calc(39.5vh - 68px);left: 17vh;"></div>
+    </div>
+    <div class="box3">
+        <div class="tri block" style="top: -2.8%;left: -10.2%;"></div>
+        <div class="tri block" style="transform: rotate(45deg);right: -10.2%;top: -2.8%;"></div>
+        <div class="quarter block" style="bottom: 0;"></div>
+        <div class="quarter block" style="bottom: 0; right: 0;border-top-left-radius: 100%;border-top-right-radius:0;"></div>
+        <div class="circle block" style="top: 13vh;left: 9.3vh;"></div>
+        <div class="circle block" style="top: 13vh;right: 9.3vh;"></div>
+        <div class="heart"id="heart2" style="top: 10vh;left: 18.25vh;"></div>
+        <div class="teleport" id="tp2" style="top: calc(39.5vh - 40px);left: 17vh;"></div>
+    </div>
+    <div class="box5">
+        <div class="tri block" style="transform: rotate(180deg); border-right: 0px solid transparent; border-bottom: 25vh solid #183D3D;"></div>
+        <div class="tri block" style="transform:rotate(0deg);border-right: 0px solid transparent; border-bottom: 25vh solid #183D3D; bottom: 0;right: 0;"></div>
+        <div class="wall block" style="height: 28vh;width: 8vh;left: 17.5vh;top: 7vh;"></div>
+        <div class="heart"id="heart3" style="top: calc(39.5vh - 25px);left: 18.75vh;"></div>
+        <div class="teleport" id="tp3" style="top: 0;left: 28vh;"></div>
+    </div>
+    <div class="box2">
+        <div class="wall block" style="width: 6vh;height: 42.5vh;"></div>
+        <div class="wall block" style="width: 6vh;height: 42.5vh;bottom: 0;right: 0"></div>
+        <div class="wall block" style="width: 18.25vh;height: 6vh;bottom: 0;"></div>
+        <div class="wall block" style="width: 18.25vh;height: 6vh;right: 0;"></div>
+        <div class="wall block" style="width: 9vh;height: 16.25vh;right: 15.25vh;"></div>
+        <div class="wall block" style="width: 9vh;height: 16.25vh;left: 15.25vh;bottom: 0;"></div>
+        <div class="heart"id="heart4" style="top: 31vh;left: 7.5vh;"></div>
+        <div class="heart"id="heart5" style="top: 7vh;left: 29vh;"></div>
+        <div class="teleport"id="tp4" style="top: calc(39.5vh - 40px);left: 26.5vh;"></div>
+    </div>
+    <div class="box4">
+        <div class="Btri block" style="transform: rotate(180deg); border-right: 0px solid transparent;"></div>
+        <div class="tri block" style ="transform:rotate(180deg);right: 0; border-left: 0px; border-bottom: 80px solid #183D3D; border-right: 50px solid transparent; "></div>
+        <div class="tri block" style="transform:rotate(0deg);border-right: 0px solid transparent; border-bottom: 25vh solid #183D3D; bottom: 0;right: 0;"></div>
+        <div class="tri block" style="transform:rotate(-135deg);left: -10.2%;bottom: -2.2%;"></div>
+        <div class="wall block" style="width: 5vh;height: 35vh;left: 17.5vh;"></div>
+        <div class="wall block" style="height: 5vh;width: 11vh;left: 17.5vh;top: 25.5vh;"></div>
+        <div class="wall block" style="height: 5vh;width: 8vh;left: 17.5vh;top: 12.5vh;"></div>
+        <div class="heart"id="heart6" style="top: 20vh;left: 22vh;"></div>
+        <div class="teleport"id="tp5" style="top: 1vh;left: 23vh;"></div>
+    </div>
+    <div class="box6">
+        <div class="quarter block" style="height: 60px;width: 60px;border-top-right-radius:0; border-bottom-right-radius: 100%;"></div>
+        <div class="quarter block" style="bottom: 0;height: 50px;width: 50px;"></div>
+        <div class="quarter block" style="bottom: 0; right: 0;border-top-left-radius: 100%;border-top-right-radius:0;height: 100px;width: 100px;"></div>
+        <div class="quarter block" style="height: 60px;width: 60px;border-top-right-radius:0; border-bottom-left-radius: 100%;right: 0;"></div>
+        <div class="half block" style="top: calc(21.25vh - 75px);height: 120px;width: 60px;"></div>
+        <div class="half block" style="top: calc(21.25vh - 75px); border-top-left-radius: 60px;border-bottom-left-radius: 60px;right: 0;border-top-right-radius: 0;border-bottom-right-radius: 0;height: 120px;width: 60px;"></div>
+        <div class="half block" style="top: calc(21.25vh - 140px);left: 15vh;height: 240px;width: 120px; border-top-right-radius: 120px;border-bottom-right-radius: 120px;"></div>
+        <div class="tri block" style="transform: rotate(180deg); border-right: 0px solid transparent; border-bottom: 25vh solid #183D3D;left: 15vh;"></div>
+        <div class="heart"id="heart7" style="top: 18vh;left: 29vh;"></div>
+        <div class="teleport" id="tp6"style="top: 2vh;left: 22vh;height: 40px;width: 40px;background-size: 40px;"></div>
+        <script src="move.js"></script>
+        <script src="other.js"></script>
+    </div>
+    <canvas id="canvas" width="100vw" height="100vh"></canvas>
+</body>
+</html>

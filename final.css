@@ -1,0 +1,10 @@
+body{
+    background-color: #003C43;
+}
+.words{
+    color: #77B0AA;
+    font-size: xx-large;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
